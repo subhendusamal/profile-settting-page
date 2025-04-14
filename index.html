@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile and settings</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Anton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Potta+One&family=Rubik+Iso&family=Rubik+Moonrocks&family=Rubik:ital,wght@0,300..900;1,300..900&family=Yellowtail&family=Zen+Dots&family=Zeyada&family=Zilla+Slab+Highlight:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="headre.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="style.css">
+    
+    
+    
+</head>
+<body>
+
+  <div class="header"> 
+    <header>
+    <div class="logo"> <a href="#"><img src="Zenspeclogo.png" alt="app-logo"></a></div>
+    <div class="middle"> <nav>
+         <ul class="nav-links">
+        <li><a href="#"><div class="Search"><img src="searchicon.png" alt=""> <input type="search" placeholder="Search a Gadget"></input></div></a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Category</a></li>
+        <li><a href="#">Compare</a></li>
+        <li><a href="#">Price tracker</a></li>
+        <li><a href="#">Tech news</a></li>
+         </ul> 
+    </nav></div>
+
+
+    <button class="user"><a href="#"><img src="user-logo.svg" alt="user-icon" onclick="toggleDropdown()" ></a></button>
+
+   
+</header>
+
+
+<div class="dropdown-profile">
+   
+   
+    <div class="dropdown-content-profile" id="dropdown-content-profile">
+        <div class="triangle"></div>
+        <div class="order-list" >
+           <a href=""> <span class="pro-set">Profile and settings</span></a>
+           <hr class="one">
+           <a href=""> <span class="wish">Wishlist</span></a>
+           <hr class="two">
+           <a href=""> <span class="sup-cont">Support and Contact</span></a>
+           <hr class="three">
+           <a href=""> <span class="log">Log out</span></a>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+ <div class="main-cont">
+    
+
+
+  <div class="top-1">
+  <div class="top-heading"><span>Profile and settings</span></div>
+  <hr  class="hr-1">
+</div>
+
+
+  <div class="form-div">
+    <!-- Edit button -->
+    <div class="edit-btn">
+      <a type="button" onclick="enableForm()">Edit details</a>
+    </div>
+  
+    <form action="https://api.web3forms.com/submit" method="post" class="cont-form" id="cont-form">
+      
+      <!-- Hidden file input, initially disabled -->
+      <input id="fileInput" type="file" accept="image/*" onchange="previewImage(event)" style="display: none;" disabled>
+      
+      <!-- Clickable image that triggers file input -->
+     <div class="prof-img">
+      <img id="preview" src="user-logo.svg" alt="Profile Preview" onclick="triggerFileInput()" style="cursor: pointer;">
+    </div> 
+
+      
+
+<div class="name-row">
+      
+      <div class="name first">
+        <label for="John" class="inp-lab ">First name</label>
+        <input id="John" type="text" class="inp-name john" placeholder="John" readonly required>
+      </div>
+      
+      <div class=" name last">
+        <label for="camero" class="inp-lab">Last name</label>
+        <input id="camero" type="text" class="inp-name camero" placeholder="Camero" readonly required>
+      </div>
+</div>
+
+      
+      <div class="email-div ">
+        <label for="Change-email" class="inp-lab">Change email*</label>
+        <input id="Change-email" type="email" class="inp-name email" placeholder="xyz@gmail.com" readonly required>
+      </div>
+      
+      <div class="password-div">
+        <label for="password-zen" class="inp-lab">Change password*</label>
+        <input id="password-zen" type="password" class="inp-name password" placeholder="ilovezenspec" readonly required>
+      </div>
+  
+          <button type="submit" class="change-btn">Save changes</button>
+      </form>
+  </div>
+
+
+<div class="sup-heading">
+<div class="sup"><span>Support</span></div>
+<hr class="hr-2">
+
+<div class="btn-box">
+
+  <div class="btn-cont1"><a href=""><button class="my-btn faq">Frequently asked questions</button></a></div>
+  
+  <div class="btn-cont3" ><a href=""><button class="my-btn cont">Contact Us</button></a></div>
+  
+  </div>
+  
+  <div class="feedback-form" >
+    <div class="feedback"> <p>Feedback & Suggestions</p></div>
+   <div class="fedform"> <form action=""> <input type="text" name=" " placeholder="We would love to hear from you guys !!" id=""></form></div>
+
+
+<div class="sub-box"><form action=""><button class="sub-btn">Submit</button></form></div>
+
+
+</div>
+</div>
+<div class="prof-left-img"><img src="profile-and-setting-left-img.png" alt=""></div>
+<div class="prof-right-img"><img src="profile-and-setting-right-img.png" alt=""></div>
+
+<div class="prof-arrow-back"><a href=""><img src="Profile-and-Settings-arrow.png" alt=""> </a></div>
+
+
+ </div>
+
+
+
+      <div class="footer">
+        <hr>
+        <footer>
+    
+            <div class="f-left"> <span class="span-1">Zenspec</span>
+                <p> <span class="span1-1">© 2025, Zenspec.tech</span><br><span class="span1-2">All rights
+                        reserved.</span></p>
+            </div>
+    
+            <div class="f-middle">
+                <p>About us <br>Contact us <br>Terms and conditions.</p>
+            </div>
+    
+            <div class="f-right">
+                <p>Crafted with</p>
+                <div class="heart"><video autoplay loop muted src="zenspec.heart.mp4"></video>
+                    <div class="overlay"></div>
+                </div>
+    
+    
+    
+                <div class="social">
+                    <button><i class="fa-brands fa-facebook"></i></button>
+                    <button><i class="fa-brands fa-linkedin"></i></button>
+                    <button><i class="fa-brands fa-youtube"></i></button>
+                    <button><i class="fa-brands fa-instagram"></i></button>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+      <script src="app.js"></script>
+      <script src="profile.js"></script>
+  
+</body>
+</html>
